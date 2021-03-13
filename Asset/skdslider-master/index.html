@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>SKDSlider - Full Width Jquery Slider - Jquery Responsive Full Width Slider - Full Screen Slider- Simple Jquery Slider</title>
+
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>-->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+
+    <script src="src/skdslider.min.js"></script>
+
+    <link href="src/skdslider.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#demo1').skdslider({
+                slideSelector: '.slide',
+                delay: 5000,
+                animationSpeed: 2000,
+                showNextPrev: true,
+                showPlayButton: true,
+                autoSlide: true,
+                animationType: 'fading'
+            });
+
+            jQuery('#demo2').skdslider({
+                slideSelector: '.slide',
+                delay: 5000,
+                animationSpeed: 1000,
+                showNextPrev: true,
+                showPlayButton: false,
+                autoSlide: true,
+                animationType: 'sliding'
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="demo1">
+        <div class="slide">
+            <img src="slides/1.jpg" />
+            <!--Slider Description example-->
+            <div class="slide-desc">
+                <h2>Slider Title 1</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slides/2.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 2</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slides/3.jpeg" />
+            <!--NO Description Here-->
+        </div>
+        <div class="slide">
+            <img src="slides/4.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 4</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slides/5.jpg" />
+        </div>
+        <div class="slide">
+            <img src="slides/6.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 6</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
